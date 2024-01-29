@@ -65,10 +65,12 @@ body {
   text-align: left;
   margin-left: 10%;
   margin-right: 10%;
+  font-size: large;
 }
 
 .home-intro {
   text-align: left;
+  font-size: medium;
   padding-top: 5%;
   padding-bottom: 5%;
 }
