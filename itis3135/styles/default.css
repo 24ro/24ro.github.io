@@ -1,0 +1,61 @@
+body {
+  background-color: rgb(249, 109, 97);
+  text-align: center;
+  font-family: monospace;
+}
+
+.header {
+  color: white;
+  font-weight: bold;
+  text-decoration: dotted;
+}
+.header:hover {
+  color: black;
+}
+
+.footer {
+  color: white;
+  font-weight: bold;
+  text-decoration: dotted;
+}
+.footer:hover {
+  color: black;
+}
+
+.design {
+  color: white;
+  font-weight: bold;
+  text-decoration: dotted;
+}
+.design:hover {
+  color: black;
+}
+
+.moose {
+  padding-top: 5%;
+  padding-left: 10%;
+  padding-right: 10%;
+  display: flex;
+  justify-content: center;
+  height: 650px;
+}
+
+.caption {
+  text-align: center;
+  color: white;
+  font-style: italic;
+}
+
+.list {
+  text-align: left;
+  color: white;
+}
+
+.intro-list {
+  margin-bottom: 10px;
+}
+
+.signature {
+  color: white;
+  font-style: italic;
+}
