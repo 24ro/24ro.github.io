@@ -38,6 +38,7 @@ body {
   display: flex;
   justify-content: center;
   height: 650px;
+  align-items: center;
 }
 
 .caption {
