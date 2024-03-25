@@ -3,66 +3,111 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Ro Mussasa's Red Moose || Hobby</title>
+    <title>Red Moose's Hobby</title>
+    <style>
+  body {
+    font-family: Arial, sans-serif;
+    background-color: #f2f2f2;
+    margin: 0;
+    padding: 0;
+  }
+  
+  header {
+    background-color: #2a378e; /* Soccer Champions League blue */
+    color: white;
+    text-align: center;
+    padding: 1rem 0;
+  }
+  
+  main {
+    text-align: center;
+    padding: 20px;
+  }
+  
+  .home-intro {
+    font-size: 1.2rem;
+    color: #2a378e; /* Soccer Champions League blue */
+  }
+  
+  footer {
+    background-color: #2a378e; /* Soccer Champions League blue */
+    color: white;
+    text-align: center;
+    padding: 1rem 0;
+  }
+  
+  .design {
+    color: white;
+    text-decoration: none;
+  }
+  
+  .design:hover {
+    text-decoration: underline;
+  }
+  
+  #validation_link_html,
+  #validation_link_css {
+    display: inline-block;
+    margin: 10px;
+  }
+</style>
     <link rel="stylesheet" href="styles/default.css" />
   </head>
 
   <body>
     <header>
-      <nav>
-        <a href="./" class="header">Home</a>
-        ||
-        <a href="introduction.html" class="header">Introduction</a>
-        ||
-        <a href="contract.html" class="header">Contract</a>
-      </nav>
-      <h1>Red Moose's Hobby</h1>
+      <h1>Red Moose's Hobby: Soccer</h1>
     </header>
 
     <main>
-      <p class="home-intro">This is my hobby page!</p>
-    </main>
-
-    <footer>
-      <p>
-        Designed by <a href="moosetech.com" class="design">MooseTech</a> ©2004
+      <p class="home-intro">
+        This is my hobby page!
       </p>
 
-      <a
-        href="https://validator.w3.org/check?uri=referer"
-        id="validation_link_html"
-      >
-        <img
-          style="border: 0; width: 88px; height: 31px"
-          src="https://mytienhoang.github.io/itis3135/z_archives/html_validation.png"
-          alt="Valid HTML!"
-        />
-      </a>
-      <a
-        href="https://jigsaw.w3.org/css-validator/check/referer"
-        id="validation_link_css"
-      >
-        <img
-          style="border: 0; width: 88px; height: 31px"
-          src="https://jigsaw.w3.org/css-validator/images/vcss"
-          alt="Valid CSS!"
-        />
-      </a>
+      <section>
+        <h2>About Me</h2>
+        <h3>Me and my hobby</h3>
+        <p>As a person who grew up being outside a lot and playing different sports, I found a hobby and an interest in playing soccer or fútbol. It was the game the whole neighborhood would be playing anytime I went outside. At times it became a slightly dangerous game because of the lengths we would go to just play the game. Jumping over barb wire fences and running onto the train tracks to get our ball back never stopped us from playing our beloved game. Overall, I've enjoyed this game from the unorganized games in the concrete streets to the organized games on fields made for the sport.</p>
+        <h3>My Experience: </h3>
+        <p>This sport was the most accessible to me growing up. It was always around me at home, at school, and the parks. I've been around it since I was five. I've played on some organized teams as well but it has always remained a hobby to help decompress, compete, and stay fit. As mentioned earlier I've played unorganized ball but I spent time on some club and school teams. So, at one point it became more than just a hobby. For brief moment in time the classic young boy's decision to go pro came about. As you can tell, it was shortlived.</p>
+      </section>
+      <figure>
+            <img src="../images/GPT_image_1.jpeg" alt="AI image of kids fetching ball on train tracks">
+            <figcaption>AI image of kids fetching ball on train tracks</figcaption>
+        </figure>
+    </main>
 
-      <script>
-        document
-          .getElementById("validation_link_html")
-          .setAttribute(
-            "href",
-            "https://validator.w3.org/check?uri=" + location.href
-          );
-        document
-          .getElementById("validation_link_css")
-          .setAttribute(
-            "href",
-            "https://jigsaw.w3.org/css-validator/validator?uri=" + location.href
-          );
-      </script>
-    </footer>
+   <footer>
+    <p>
+        Designed by <a href="moosetech.com" class="design">MooseTech</a> ©2004
+    </p>
+
+    <a href="https://validator.w3.org/check?uri=referer" id="validation_link_html">
+        <img style="border: 0; width: 88px; height: 31px"
+            src="https://mytienhoang.github.io/itis3135/z_archives/html_validation.png"
+            alt="Valid HTML!" />
+    </a>
+    <a href="https://jigsaw.w3.org/css-validator/check/referer" id="validation_link_css">
+        <img style="border: 0; width: 88px; height: 31px"
+            src="https://jigsaw.w3.org/css-validator/images/vcss"
+            alt="Valid CSS!" />
+    </a>
+
+    <script src="https://cdn.jsdelivr.net/npm/@axe-core/react@latest/dist/axe.min.js"></script>
+    <script>
+        axe.run().then((results) => {
+            if (results.violations.length > 0) {
+                console.error('Accessibility violations:', results.violations);
+                document.getElementById("accessibility_status").innerText = "Accessibility issues found!";
+            } else {
+                console.log('No accessibility violations found!');
+                document.getElementById("accessibility_status").innerText = "No accessibility issues found!";
+            }
+        });
+    </script>
+
+    <p id="accessibility_status"></p>
+</footer>
+
   </body>
 </html>
