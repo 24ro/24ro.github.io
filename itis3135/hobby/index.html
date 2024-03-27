@@ -20,7 +20,7 @@
       }
 
       main {
-        text-align: center;
+        text-align: left;
         padding: 20px;
       }
 
@@ -46,7 +46,8 @@
       }
 
       #validation_link_html,
-      #validation_link_css {
+      #validation_link_css,
+      #validation_link_disability {
         display: inline-block;
         margin: 10px;
       }
@@ -256,20 +257,16 @@
         />
       </a>
 
-      <script src="https://cdn.jsdelivr.net/npm/@axe-core/react@latest/dist/axe.min.js"></script>
-      <script>
-        axe.run().then((results) => {
-          if (results.violations.length > 0) {
-            console.error("Accessibility violations:", results.violations);
-            document.getElementById("accessibility_status").innerText =
-              "Accessibility issues found!";
-          } else {
-            console.log("No accessibility violations found!");
-            document.getElementById("accessibility_status").innerText =
-              "No accessibility issues found!";
-          }
-        });
-      </script>
+      <a
+        href="https://wave.webaim.org/report#/"
+        id="validation_link_disability"
+      >
+        <img
+          style="border: 0; width: 88px; height: 31px"
+          src="images/button_validation_wcag-2.png"
+          alt="Valid Disabiliy/Accessibility Design!"
+        />
+      </a>
 
       <p id="accessibility_status"></p>
     </footer>
