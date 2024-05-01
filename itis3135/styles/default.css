@@ -72,7 +72,6 @@ body {
   text-decoration: dotted;
   text-align: center;
   font-size: 14;
-  background-color: green;
 }
 .footer:hover {
   color: black;
@@ -80,4 +79,8 @@ body {
 
 .footer a {
   color: white;
+}
+
+a {
+  text-decoration: none;
 }
