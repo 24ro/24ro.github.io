@@ -13,15 +13,6 @@ body {
   color: black;
 }
 
-.footer {
-  color: white;
-  font-weight: bold;
-  text-decoration: dotted;
-}
-.footer:hover {
-  color: black;
-}
-
 .design {
   color: white;
   font-weight: bold;
@@ -73,4 +64,20 @@ body {
   font-size: medium;
   padding-top: 5%;
   padding-bottom: 5%;
+}
+
+.footer {
+  color: white;
+  font-weight: bold;
+  text-decoration: dotted;
+  text-align: center;
+  font-size: 14;
+  background-color: green;
+}
+.footer:hover {
+  color: black;
+}
+
+.footer a {
+  color: white;
 }
