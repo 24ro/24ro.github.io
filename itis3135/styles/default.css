@@ -1,6 +1,6 @@
-
-
-
+:root{
+  --width: 800px;
+}
 
 body {
   background-color: rgb(249, 109, 97);
