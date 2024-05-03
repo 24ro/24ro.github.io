@@ -10,16 +10,7 @@
 
   <body>
     <header>
-      <h1>Ro Mussasa || ITIS 3135</h1>
-      <nav>
-        <a href="./" class="header">Home</a>
-        ||
-        <a href="introduction.html" class="header">Introduction</a>
-        ||
-        <a href="contract.html" class="header">Contract</a>
-        ||
-        <a href="hobby/" class="header">Hobby</a>
-      </nav>
+      <div data-include="components/header.html"></div>
     </header>
 
     <main>
@@ -38,7 +29,7 @@
 
       <ul class="list">
         <li class="intro-list">
-          Personal Background: I was born in South Africa and moved here back in
+          <strong>Personal Background:</strong> I was born in South Africa and moved here back in
           2016.
         </li>
         <li class="intro-list">
@@ -46,95 +37,39 @@
           in the past as well as a retail job.
         </li>
         <li class="intro-list">
-          Academic Background: A.A. Degree from a Middle College School in
+          <strong>Academic Background:</strong> A.A. Degree from a Middle College School in
           Durham and I’m currently a junior here.
         </li>
         <li class="intro-list">
-          Background in this Subject: No true experience with this subject.
+          <strong>Background in this Subject:</strong> No true experience with this subject.
         </li>
-        <li class="intro-list">Primary Computer Platform: Apple MacBook</li>
+        <li class="intro-list"><strong>Primary Computer Platform:</strong> Apple MacBook</li>
         <li class="intro-list">
-          Courses I'm Taking & Why:
+          <strong>Courses I'm Taking & Why:</strong>
           <ul>
-            <li class="intro-list">ITCS 3160 - Database Design & Implementation: For My major.</li>
+            <li class="intro-list"><strong>ITCS 3160 - Database Design & Implementation:</strong> For My major.</li>
             <li class="intro-list">
-              ITCS 3162 - Intro to Data Mining: Interest coupled with it being a
+              <strong>ITCS 3162 - Intro to Data Mining:</strong> Interest coupled with it being a
               requirement.
             </li>
             <li class="intro-list">
-              ITIS 3135 - Web App Design and Development: Interest coupled with
+              <strong>ITIS 3135 - Web App Design and Development:</strong> Interest coupled with
               it being a requirement
             </li>
             <li class="intro-list">
-              ITIS3200 - Intro to Info Security & Privacy: An interesting class
+              <strong>ITIS3200 - Intro to Info Security & Privacy:</strong> An interesting class
               that I believe will provide some fun.
             </li>
           </ul>
-        <li class="intro-list">Funny/Interesting Item to Remember me by: Steph Curry Fan.</li>
-        <li class="intro-list">I'd also like to Share:  I’m looking forward to learning a lot in class.</li>
+        <li class="intro-list"><strong>Funny/Interesting Item to Remember me by:</strong> Steph Curry Fan.</li>
+        <li class="intro-list"><strong>I'd also like to Share:</strong> I’m looking forward to learning a lot in class.</li>
         </li>
       </ul>
     </main>
 
     <footer>
-       <p>
-        Designed by <a href="moosetech.com" class="design">MooseTech</a> ©2004
-      </p>
-
-      <a
-        href="https://validator.w3.org/check?uri=referer"
-        id="validation_link_html"
-      >
-        <img
-          style="border: 0; width: 88px; height: 31px"
-          src="https://mytienhoang.github.io/itis3135/z_archives/html_validation.png"
-          alt="Valid HTML!"
-        />
-      </a>
-      <a
-        href="https://jigsaw.w3.org/css-validator/check/referer"
-        id="validation_link_css"
-      >
-        <img
-          style="border: 0; width: 88px; height: 31px"
-          src="https://jigsaw.w3.org/css-validator/images/vcss"
-          alt="Valid CSS!"
-        />
-      </a>
-      <a
-        href="https://wave.webaim.org/report#/"
-        id="validation_link_disability"
-      >
-        <img
-          style="border: 0; width: 88px; height: 31px"
-          src="../images/button_validation_wcag.png"
-          alt="Valid Disabiliy/Accessibility Design!"
-        />
-      </a>
-
-      <script>
-        document
-          .getElementById("validation_link_html")
-          .setAttribute(
-            "href",
-            "https://validator.w3.org/check?uri=" + location.href
-          );
-        document
-          .getElementById("validation_link_css")
-          .setAttribute(
-            "href",
-            "https://jigsaw.w3.org/css-validator/validator?uri=" + location.href
-          );
-          document
-          .getElementById("validation_link_disability")
-          .setAttribute(
-            "href",
-            "https://wave.webaim.org/report#/" + location.href
-          );
-      </script>
-     
       <div data-include="components/footer.html"></div>
     </footer>
-      <script src="footernav.js"></script>
+      <script src="scripts/include.js"></script>
   </body>
 </html>
