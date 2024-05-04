@@ -6,6 +6,36 @@
     <title>Ro Mussasa's Red Moose || ITIS 3135 || Tables</title>
     <link rel="stylesheet" href="styles/default.css" >
     <script src="https://farawayforests.com/cdn/accumulus/accumulus.min.js"></script>
+    <style>
+    table {
+      border-collapse: collapse;
+      width: 100%;
+    }
+
+    th, td {
+      padding: 8px;
+      text-align: left;
+    }
+
+    th {
+      background-color: #333;
+      color: white;
+    }
+
+    tr:nth-child(even) {
+      background-color: #f2f2f2;
+    }
+
+    caption {
+      font-weight: bold;
+      font-style: italic;
+      margin-bottom: 10px;
+    }
+
+    td, th {
+      border: 1px solid black;
+    }
+  </style>
   </head>
 
   <body>
@@ -63,12 +93,12 @@
       </ol>
 
       <h3>Employee Data in Simple Table</h3>
-      <table border="1">
+      <table>
         <tr>
           <th><strong>Name</strong></th>
-          <th><strong>Email</strong</th>
-          <th><strong>Years of Service</strong</th>
-          <th><strong>Salary</strong</th>
+          <th><strong>Email</strong></th>
+          <th><strong>Years of Service</strong></th>
+          <th><strong>Salary</strong></th>
         </tr>
         <tr>
           <td>Andrew Bolts</td>
@@ -115,13 +145,15 @@
       </table>
 
       <h3>Employee Data in Complex Table</h3>
-      <table border="1">
+      <figure>
+        <figcaption>Employee Information</figcaption>
+      <table>
         <tr>
           <th><strong>Category</strong></th>
           <th><strong>Name</strong></th>
-          <th><strong>Email</strong</th>
-          <th><strong>Years of Service</strong</th>
-          <th><strong>Salary</strong</th>
+          <th><strong>Email</strong></th>
+          <th><strong>Years of Service</strong></th>
+          <th><strong>Annual Salary</strong></th>
         </tr>
         <tr>
           <td rowspan="2">Juniors</td>
@@ -168,7 +200,17 @@
           <td>15</td>
           <td>$450, 000</td>
         </tr>
+          <tr class="total-row">
+          <th colspan="3">Total Years of Service</th>
+          <th>63</th>
+        </tr>
+        <tr>
+          <tr class="total-row">
+          <th colspan="4">Total Annual Salary</th>
+          <th>$1, 320, 000</th>
+        </tr>
       </table>
+      </figure>
     </main>
 
     <footer>
