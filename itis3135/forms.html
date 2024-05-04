@@ -16,10 +16,33 @@
     </header>
 
     <main>
-      <h2>About</h2>
-      <p class="about-intro">
-        Welcome to Moose Lace! Shop your favorite custom shoe laces! Bring personal customization to your feet and take shoe customization to the next level. We make your daily shoe wearing experience more stylish and bold.
-      </p>
+      <h2>Form</h2>
+      <p class="page-form">Fill out this form:</p>
+      <form>
+        <label for="name">Name: </label><br>
+        <input type="text" id="name" name="name" placeholder="John Doe"><br>
+
+        <label for="email">Email: </label><br>
+        <input type="email" id="email" name="email" placeholder="jdoe@gmail.com" required><br>
+
+        <label for="phone-number">Phone #: </label><br>
+        <input type="tel" id="phone-number" name="phone-number" pattern="[0-9]{10}" placeholder="000-000-0000" required><br><br>
+
+        <label for="age-range">Age range:</label><br>
+        <input type="radio" id="option1" name="age-range" value="Option1">
+        <label for="option1"> 0 - 12</label><br>
+        <input type="radio" id="option2" name="age-range" value="Option2">
+        <label for="option2"> 13 - 18 </label><br>
+        <input type="radio" id="option3" name="age-range" value="Option3">
+        <label for="option3"> 18 - 25</label><br>
+        <input type="radio" id="option3" name="age-range" value="Option3">
+        <label for="option3"> 25 - 65 </label><br><br>
+
+        
+
+        <button type="submit">Submit</button>
+        
+      </form>
     </main>
 
     <footer>
