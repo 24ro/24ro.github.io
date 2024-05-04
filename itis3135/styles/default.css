@@ -118,14 +118,15 @@ input[type="radio"]:checked + label {
 .time-script{
   text-align: left;
   font-size: small;
+  color: white;
 }
 
 .script-info{
-  text-align: left;
+  text-align: center;
   border-color: mediumspringgreen;
 }
 
 .script-info input{
-  text-align: left;
+  text-align: center;
   border-color: mediumspringgreen;
 }
