@@ -36,18 +36,47 @@
         background-color: #C08552;
         width: 100%;
       }
+
+      .custom-list {
+        list-style-type: none; /* Remove default bullet points */
+      }
+
+      .custom-list li:before {
+        content: "\2022"; /* Use Unicode character for bullet point (•) */
+        color: #C08552; 
+        font-size: 20px; /* Set size of bullet point */
+        margin-right: 5px; /* Adjust spacing between bullet point and text */
+      }
+
     </style>
   </head>
   <body>
     <header>
-      <h1><img src="../images/moose-shape.png"></img></h1>
+      <h1><img src="../images/moose-shape.png" alt="Moose logo"></img></h1>
       <h1>Ro Enterprises</h1> 
       <p>Harnessing Innovation, Driven by the Spirit of the <strong>Red Moose</strong></p>
     </header>
 
     <main>
-      <h2>Business</h2>
+      <h2>Ro Enterprises</h2>
+      <p>
+        Our brand and company is focused on providing the best outdoor gear for nature lovers. If you're a hunter, camper, hiker, or simply have need to scratch that outdoor exploration itch, take a look at our catalogue.
+      </p>
+      <br>
+      <hr>
+      <p>Why shop with us:</p>
+      <ul class="custom-list">
+        <li>Small company that is focused on quality products</li>
+        <li>We are price friendly</li>
+        <li><strong>Our focus is to be in every moment that you capture on your adventures</strong></li>
+        <li>Our manufacturing takes into consideration every climate</li>
+        <li>The preservation of nature is at the core of our company values</li>
+      </ul>
     </main>
+    
+    <br>
+    <hr>
+    <br>
 
     <footer>
       <p>Harnessing Innovation, Driven by the Spirit of the <strong>Red Moose</strong><br> ©2004</p>
