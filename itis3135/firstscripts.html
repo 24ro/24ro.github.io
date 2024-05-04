@@ -16,16 +16,29 @@
     <br>
     <main>
       <h2>Script</h2>
-      <h3 class="time-script">
-        <p id="demo"></p>
+      <h3 class="time-script" id="time">
         <script>
-        document.getElementById("demo").innerHTML = "Date : " + Date();
+        document.getElementById("time").innerHTML = "Date : " + Date();
         </script>
+        <br>
       </h3>
+
+      <div class="script-info">
+        <label for="name"><strong>Enter your name:</strong> </label><br>
+          <input type="text" id="name" name="name" placeholder="John Doe" size="30" required>
+          <br>
+          <br>
+          <label for="emotion"><strong>How are you feeling:</strong> </label><br>
+          <input type="text" id="emotion" name="name" placeholder="Relaxed" size="30" required><br>
+      </div>
+
+      
     </main>
-    <br>
+
       <br>
       <br>
+      <br>
+
     <footer>
       <div data-include="components/footer.html"></div>
     </footer>
