@@ -19,32 +19,52 @@
       <h2>Form</h2>
       <p class="page-form">Fill out this form:</p>
       <form>
-        <label for="name">Name: </label><br>
-        <input type="text" id="name" name="name" placeholder="John Doe"><br>
-
-        <label for="email">Email: </label><br>
-        <input type="email" id="email" name="email" placeholder="jdoe@gmail.com" required><br>
-
-        <label for="phone-number">Phone #: </label><br>
-        <input type="tel" id="phone-number" name="phone-number" pattern="[0-9]{10}" placeholder="000-000-0000" required><br><br>
-
-        <label for="age-range">Age range:</label><br>
-        <input type="radio" id="option1" name="age-range" value="Option1">
-        <label for="option1"> 0 - 12</label><br>
-        <input type="radio" id="option2" name="age-range" value="Option2">
-        <label for="option2"> 13 - 18 </label><br>
-        <input type="radio" id="option3" name="age-range" value="Option3">
-        <label for="option3"> 18 - 25</label><br>
-        <input type="radio" id="option3" name="age-range" value="Option3">
-        <label for="option3"> 25 - 65 </label><br><br>
-
-        
-
-        <button type="submit">Submit</button>
+        <label for="name"><strong>Name:</strong> </label><br>
+        <input class="basic-info"type="text" id="name" name="name" placeholder="John Doe" size="30" required><br>
+          <br>
+        <label for="email"><strong>Email:</strong></label><br>
+        <input class="basic-info" type="email" id="email" name="email" placeholder="jdoe@gmail.com" size="30" required><br>
+          <br>
+        <label for="phone-number"><strong>Phone #: </strong></label><br>
+        <input class="basic-info" type="tel" id="phone-number" name="phone-number" pattern="[0-9]{10}" placeholder="000-000-0000" required><br>
+          <br>
+        <label for="age-range"><strong>Age range:</strong></label><br>
+        <input class="basic-info2" type="radio" id="option1" name="age-range" value="Option1">
+        <label for="option1"> 0 - 12</label>
+        <input class="basic-info2" type="radio" id="option2" name="age-range" value="Option2">
+        <label for="option2"> 13 - 18 </label>
+        <input class="basic-info2" type="radio" id="option3" name="age-range" value="Option3">
+        <label for="option3"> 19 - 25</label>
+        <input class="basic-info2" type="radio" id="option3" name="age-range" value="Option3">
+        <label for="option3"> 26 - 65 </label><br><br>
+          <br>
+        <label for="customize-q"><strong>Where do you get your shoes from?</strong></label><br>
+        <input class="basic-info2" type="checkbox" id="customize-q" name="customize-q" value="Option1">
+        <label for="option1">Mall</em></label>
+        <input class="basic-info2" type="checkbox" id="customize-q" name="customize-q" value="Option2">
+        <label for="option2">Outlet Store</label>
+        <input class="basic-info2" type="checkbox" id="customize-q" name="customize-q" value="Option2">
+        <label for="option2">Online</label><br>
+          <br>
+          <br>
+          <p><strong>How did you hear about Moose Laces?</strong></p>
+        <select id="media" name="media">
+          <option>Select...</option>
+          <option value="Social Media">Social Media</option>
+          <option value="TV">TV</option>
+          <option value="Friends">Friend</option>
+          <option value="Other">Other</option>
+        </select>
+          <br>
+          <br>
+          <br>
+        <button class="button-class" type="reset" >Clear</button> | <button class="button-class" type="submit">Submit</button>
         
       </form>
     </main>
-
+      <br>
+      <br>
+      <br>
     <footer>
         <div data-include="components/footer.html"></div>
     </footer>

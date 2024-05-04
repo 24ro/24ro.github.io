@@ -89,3 +89,21 @@ body {
 a {
   text-decoration: none;
 }
+
+button {
+  background-color: mediumspringgreen;
+  color: blue;
+}
+
+select{
+  border-color: mediumspringgreen;
+}
+
+.basic-info{
+  border-color: mediumspringgreen;
+}
+
+input[type="checkbox"]:checked + label,
+input[type="radio"]:checked + label {
+    color: mediumspringgreen; 
+}
