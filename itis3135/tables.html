@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" >
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" >
+    <title>Ro Mussasa's Red Moose || ITIS 3135 || Tables</title>
+    <link rel="stylesheet" href="styles/default.css" >
+    <script src="https://farawayforests.com/cdn/accumulus/accumulus.min.js"></script>
+  </head>
+
+  <body>
+    <header>
+      <div data-include="components/header.html"></div>
+    </header>
+
+    <main>
+      <h2>HTML Tables</h2>
+
+      <h3>My Tabular Data</h3>
+      <ol>
+        <li>
+          <strong>Name:</strong> Andrew Bolts |
+          <strong>Email:</strong> boltandw@gmail.com |
+          <strong>Y.O.S:</strong> 5 |
+          <strong>Salary:</strong> $100, 000
+        </li>
+        <li>
+          <strong>Name:</strong> Matthew Stern |
+          <strong>Email:</strong> sternmatthew@gmail.com |
+          <strong>Y.O.S:</strong> 15 |
+          <strong>Salary:</strong> $450, 000
+        </li>
+        <li>
+          <strong>Name:</strong> Oscar Jolie |
+          <strong>Email:</strong> jooscar@gmail.com |
+          <strong>Y.O.S:</strong> 7 |
+          <strong>Salary:</strong> $165, 000
+        </li>
+        <li>
+          <strong>Name:</strong>  Maria del Maria |
+          <strong>Email:</strong> mdelmaria@gmail.com |
+          <strong>Y.O.S:</strong> 3 |
+          <strong>Salary:</strong> $80, 000
+        </li>
+        <li>
+          <strong>Name:</strong> Shrek Farquaad |
+          <strong>Email:</strong> shrekfarfaraway@gmail.com |
+          <strong>Y.O.S:</strong> 12 |
+          <strong>Salary:</strong> $325, 000
+        </li>
+        <li>
+          <strong>Name:</strong> Drake Lamar |
+          <strong>Email:</strong> drakelamar@gmail.com |
+          <strong>Y.O.S:</strong> 14 |
+          <strong>Salary:</strong> $350, 000 
+        </li>
+        <li>
+          <strong>Name:</strong> Sally Mae |
+          <strong>Email:</strong> maesallytakeyourmoney@gmail.com |
+          <strong>Y.O.S:</strong> 7 |
+          <strong>Salary:</strong> $200, 000
+        </li>
+      </ol>
+
+      <h3>Employee Data in Simple Table</h3>
+      <table border="1">
+        <tr>
+          <th><strong>Name</strong></th>
+          <th><strong>Email</strong</th>
+          <th><strong>Years of Service</strong</th>
+          <th><strong>Salary</strong</th>
+        </tr>
+        <tr>
+          <td>Andrew Bolts</td>
+          <td>boltandw@gmail.com</td>
+          <td>5</td>
+          <td>$100, 000</td>
+        </tr>
+        <tr>
+          <td>Matthew Stern</td>
+          <td>sternmatthew@gmail.com</td>
+          <td>15</td>
+          <td>$450, 000</td>
+        </tr>
+        <tr>
+          <td>Oscar Jolie</td>
+          <td>jooscar@gmail.com</td>
+          <td>7</td>
+          <td>$165, 000</td>
+        </tr>
+        <tr>
+          <td> Maria del Maria</td>
+          <td> mdelmaria@gmail.com</td>
+          <td>3</td>
+          <td>$80, 000</td>
+        </tr>
+        <tr>
+          <td> Shrek Farquaad</td>
+          <td> shrekfaraway@gmail.com</td>
+          <td>12</td>
+          <td>$325, 000</td>
+        </tr>
+        <tr>
+          <td> Drake Lamar</td>
+          <td> drakelamar@gmail.com</td>
+          <td>14</td>
+          <td>$350, 000</td>
+        </tr>
+        <tr>
+          <td> Sally Mae</td>
+          <td> maesallytakeyourmoney@gmail.com</td>
+          <td>7</td>
+          <td>$200, 000</td>
+        </tr>
+      </table>
+
+      <h3>Employee Data in Complex Table</h3>
+      <table border="1">
+        <tr>
+          <th><strong>Category</strong></th>
+          <th><strong>Name</strong></th>
+          <th><strong>Email</strong</th>
+          <th><strong>Years of Service</strong</th>
+          <th><strong>Salary</strong</th>
+        </tr>
+        <tr>
+          <td rowspan="2">Juniors</td>
+          <td> Maria del Maria</td>
+          <td> mdelmaria@gmail.com</td>
+          <td>3</td>
+          <td>$80, 000</td>
+        </tr>
+        <tr>
+          <td>Andrew Bolts</td>
+          <td>boltandw@gmail.com</td>
+          <td>5</td>
+          <td>$100, 000</td>
+        </tr>
+        <tr>
+          <td rowspan="2">Mid-level</td>
+          <td>Oscar Jolie</td>
+          <td>jooscar@gmail.com</td>
+          <td>7</td>
+          <td>$165, 000</td>
+        </tr>
+        <tr>
+          <td> Sally Mae</td>
+          <td> maesallytakeyourmoney@gmail.com</td>
+          <td>7</td>
+          <td>$200, 000</td>
+        </tr>
+        <tr>
+          <td rowspan="3">Seniors</td>
+          <td> Shrek Farquaad</td>
+          <td> shrekfaraway@gmail.com</td>
+          <td>12</td>
+          <td>$325, 000</td>
+        </tr>
+        <tr>
+          <td> Drake Lamar</td>
+          <td> drakelamar@gmail.com</td>
+          <td>14</td>
+          <td>$350, 000</td>
+        </tr>
+        <tr>
+          <td>Matthew Stern</td>
+          <td>sternmatthew@gmail.com</td>
+          <td>15</td>
+          <td>$450, 000</td>
+        </tr>
+      </table>
+    </main>
+
+    <footer>
+      <div data-include="components/footer.html"></div>
+    </footer>
+    <script src="scripts/include.js"></script>
+  </body>
+</html>
