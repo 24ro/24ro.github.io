@@ -24,15 +24,36 @@
       </h3>
 
       <div class="script-info">
-        <label for="name"><strong>Enter your name:</strong> </label><br>
+        <label for="name"><strong>Enter your name:</strong> </label>
           <input type="text" id="name" name="name" placeholder="John Doe" size="30" required>
           <br>
           <br>
-          <label for="emotion"><strong>How are you feeling:</strong> </label><br>
-          <input type="text" id="emotion" name="name" placeholder="Relaxed" size="30" required><br>
+          <label for="emotion"><strong>How are you feeling:</strong> </label>
+          <input type="text" id="emotion" name="name" placeholder="Relaxed" size="30" required>
+          <br>
+          <br>
+          <label for="quantity"><strong>Let us know how feel on a scale (0 - 10):</strong></label>
+          <input type="number" id="quantity" name="name" min="0" max="10" value="10">
       </div>
-
-      
+        <br>
+        <br>
+      <button class="script-button" type="Submit" onclick="myFunction()">Submit</button>
+        <p id="demo"></p>
+      <script>
+        function myFunction() {
+          let y = document.getElementById("name").value
+          let z = document.getElementById("emotion").value
+          let x = document.getElementById("quantity").value;
+        
+          let text;
+          if (isNaN(x) || x < 1 || x > 10) {
+            text = "Input not valid";
+          } else {
+            text = "The Ro Enterprises team welcomes you " + y + "! We're glad you're feeling " + z + "!";
+          }
+          document.getElementById("demo").innerHTML = text;
+        }
+      </script>
     </main>
 
       <br>
