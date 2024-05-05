@@ -124,15 +124,15 @@ input[type="radio"]:checked + label {
 }
 
 .script-info{
-  text-align: left;
+  text-align: center;
   border-color: mediumspringgreen;
 }
 
 .script-info input{
-  text-align: left;
+  text-align: center;
   border-color: mediumspringgreen;
 }
 
 .script-button-container{
-  text-align: left;
+  text-align: center;
 }
