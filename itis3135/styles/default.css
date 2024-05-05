@@ -116,17 +116,21 @@ input[type="radio"]:checked + label {
 }
 
 .time-script{
-  text-align: left;
+  text-align: center;
   font-size: small;
   color: white;
 }
 
 .script-info{
-  text-align: center;
+  text-align: left;
   border-color: mediumspringgreen;
 }
 
 .script-info input{
-  text-align: center;
+  text-align: left;
   border-color: mediumspringgreen;
+}
+
+.script-button-container{
+  text-align: left;
 }
