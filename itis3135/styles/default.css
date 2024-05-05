@@ -147,11 +147,7 @@ input[type="radio"]:checked + label {
   text-align: left;
 }
 
-.byo-container form {
-    display: flex;
-    flex-direction: column;
-    
-}
+
 
 .byo-container form label {
     margin-bottom: 5px;
@@ -161,6 +157,12 @@ input[type="radio"]:checked + label {
 .byo-container form input[type="file"] {
     width: calc(100% - 10px); 
     border-color: mediumspringgreen;
+}
+
+.byo-button{
+  text-align: center;
+  background-color: mediumspringgreen;
+  color: blue;
 }
 
 
