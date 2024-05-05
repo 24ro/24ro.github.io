@@ -2,6 +2,12 @@
   --width: 800px;
 }
 
+main, .maincontainer {
+  width: 90%; 
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
 body {
   background-color: rgb(249, 109, 97);
   font-family: monospace;
@@ -136,3 +142,22 @@ input[type="radio"]:checked + label {
 .script-button-container{
   text-align: center;
 }
+
+/* Rule Overrides For Laptops / Small Screens */
+@media screen and ( min-width: 981px ) and ( max-width: 1400px ) {
+    #colorbox {
+        background-color:yellow;
+    }
+}
+/* Rule Overrides For Tablet Devices */
+@media screen and ( min-width: 601px ) and ( max-width: 980px )  {
+    #colorbox {
+        background-color:orange;
+    }
+}
+/* Rule Overrides For Mobile Devices */
+@media screen and ( min-width: 370px ) and ( max-width: 600px ) {
+    #colorbox {
+        background-color:red;
+    }
+  }
