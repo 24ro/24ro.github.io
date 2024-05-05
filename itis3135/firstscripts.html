@@ -42,6 +42,17 @@
         <button class="script-button" type="Submit" onclick="myFunction()">Submit</button>
       </div>
 
+      <button class="factBtn" data-fact="fact1">Moose Fact 1</button>
+      <button class="factBtn" data-fact="fact2">Moose Fact 2</button>
+      <button class="factBtn" data-fact="fact3">Moose Fact 3</button>
+      <button class="factBtn" data-fact="fact4">Moose Fact 4</button>
+
+      <div id="fact1" class="fact" style="display: none;">Moose are the largest members of the deer family.</div>
+      <div id="fact2" class="fact" style="display: none;">Male moose, called bulls, grow antlers each year, shedding them in the winter and regrowing them in the spring.</div>
+      <div id="fact3" class="fact" style="display: none;">Moose are excellent swimmers and can dive up to 6 meters (20 feet) underwater to feed on aquatic plants.</div>
+      <div id="fact4" class="fact" style="display: none;">Moose have a keen sense of smell, which helps them detect predators and locate food in their forest habitats.</div>
+
+
       <p id="demo"></p>
       <script>
         function myFunction() {
@@ -57,6 +68,23 @@
           }
           document.getElementById("demo").innerHTML = text;
         }
+      </script>
+
+      <script>
+        const factBtns = document.querySelectorAll(".factBtn");
+        const facts = document.querySelectorAll(".fact");
+
+        factBtns.forEach(function(button) {
+            button.addEventListener("click", function() {
+                const factId = this.getAttribute("data-fact");
+                
+                facts.forEach(function(fact) {
+                    fact.style.display = "none";
+                });
+                
+                document.getElementById(factId).style.display = "block";
+            });
+        });
       </script>
     </main>
 
