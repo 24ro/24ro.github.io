@@ -143,9 +143,24 @@ input[type="radio"]:checked + label {
   text-align: center;
 }
 
-.byo-info{
-  text-align: center;
+.byo-container{
+  text-align: left;
 }
+
+.byo-container form {
+    display: flex;
+    flex-direction: column;
+}
+
+.byo-container form label {
+    margin-bottom: 5px;
+}
+
+.byo-container form input[type="text"],
+.byo-container form input[type="file"] {
+    width: calc(100% - 10px); 
+}
+
 
 /* Rule Overrides For Laptops / Small Screens */
 @media screen and ( min-width: 981px ) and ( max-width: 1400px ) {
