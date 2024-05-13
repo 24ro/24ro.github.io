@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Ro Mussasa's Red Moose || ITIS 3135 || Calculator Try</title>
+    <link rel="stylesheet" href="styles/calculator.css" />
+    <script src="https://farawayforests.com/cdn/accumulus/accumulus.min.js"></script>
+  </head>
+  <br />
+  <body class="calc-body">
+    <header>
+      <div data-include="components/header.html"></div>
+      <h3>
+        <strong
+          >"<i>Your laces are <em>Moose</em>"</i></strong
+        >
+      </h3>
+    </header>
+
+    <main>
+      <h2>Calculator</h2>
+      <form class="calc-main" action="" name="calc">
+        <input
+          type="text"
+          name="display"
+          style="width: 370px; height: 70px"
+        /><br />
+        <input
+          class="btn"
+          type="button"
+          value="0"
+          onclick="calc.display.value += '0' "
+        />
+        <input
+          class="btn"
+          type="button"
+          value="1"
+          onclick="calc.display.value += '1' "
+        />
+        <input
+          class="btn"
+          type="button"
+          value="2"
+          onclick="calc.display.value += '2' "
+        />
+        <input
+          class="btn"
+          type="button"
+          value="+"
+          onclick="calc.display.value += '+' "
+          style="background-color: red"
+        /><br />
+        <input
+          class="btn"
+          type="button"
+          value="3"
+          onclick="calc.display.value += '3' "
+        />
+        <input
+          class="btn"
+          type="button"
+          value="4"
+          onclick="calc.display.value += '4' "
+        />
+        <input
+          class="btn"
+          type="button"
+          value="5"
+          onclick="calc.display.value += '5' "
+        />
+        <input
+          class="btn"
+          type="button"
+          value="-"
+          onclick="calc.display.value += '-' "
+          style="background-color: orange"
+        /><br />
+        <input
+          class="btn"
+          type="button"
+          value="6"
+          onclick="calc.display.value += '6' "
+        />
+        <input
+          class="btn"
+          type="button"
+          value="7"
+          onclick="calc.display.value += '7' "
+        />
+        <input
+          class="btn"
+          type="button"
+          value="8"
+          onclick="calc.display.value += '8' "
+        />
+        <input
+          class="btn"
+          type="button"
+          value="*"
+          onclick="calc.display.value += '*' "
+          style="background-color: brown"
+        /><br />
+        <input
+          class="btn"
+          type="button"
+          value="9"
+          onclick="calc.display.value += '9' "
+        />
+        <input
+          class="btn"
+          type="button"
+          value="C"
+          onclick="calc.display.value = '' "
+          style="background-color: yellow"
+        />
+        <input
+          class="btn"
+          type="button"
+          value="="
+          onclick="calc.display.value = eval(calc.display.value) "
+          style="background-color: green"
+        />
+        <input
+          class="btn"
+          type="button"
+          value="&#247;"
+          onclick="calc.display.value += '/' "
+          style="background-color: grey"
+        />
+      </form>
+    </main>
+    <br />
+    <br />
+    <br />
+    <footer>
+      <div data-include="components/footer.html"></div>
+    </footer>
+    <script src="scripts/include.js"></script>
+    <button
+      type="button"
+      onclick="document.querySelectorAll('link[rel=stylesheet]').forEach(function(e)	{e.setAttribute('href', '');});"
+    >
+      No CSS
+    </button>
+  </body>
+</html>

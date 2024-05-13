@@ -54,7 +54,7 @@
 
 
       <p id="demo"></p>
-      <script>
+      <em><script>
         function myFunction() {
           let y = document.getElementById("name").value
           let z = document.getElementById("emotion").value
@@ -64,11 +64,12 @@
           if (isNaN(x) || x < 1 || x > 10) {
             text = "Input not valid";
           } else {
-            text = "The Ro Enterprises team welcomes you " + y + "! We're glad you're feeling " + z + "!";
+            text = "The Ro Enterprises team welcomes you " + y + " ! We're glad you're feeling " + z + "!";
           }
           document.getElementById("demo").innerHTML = text;
         }
       </script>
+      </em>
 
       <script>
         const factBtns = document.querySelectorAll(".factBtn");

@@ -35,3 +35,60 @@ document.getElementById("byo-container").addEventListener("submit", function (ev
           document.getElementById("byo-form").appendChild(errorMessage);
         }
 });
+
+/*document.getElementById("add-class-btn").addEventListener("click", function () {
+  var classContainer = document.getElementById("class-container");
+
+  // Create text input element
+  var input = document.createElement("input");
+  input.type = "text";
+  input.className = "class-entry";
+  input.placeholder = "Enter class name";
+
+  // Create delete button
+  var deleteBtn = document.createElement("button");
+  deleteBtn.textContent = "Delete";
+  deleteBtn.className = "delete-btn";
+  deleteBtn.onclick = function () {
+    classContainer.removeChild(container);
+  };
+
+  // Create container for text input and delete button
+  var container = document.createElement("div");
+  container.appendChild(input);
+  container.appendChild(deleteBtn);
+
+  // Append container to class container
+  classContainer.appendChild(container);
+});*/
+
+const coursesInput = document.getElementById("coursesInput");
+const coursesTaking = document.getElementById("coursesTaking");
+let count = 0;
+
+function addCourse() {
+  let courseContainer = document.createElement("div");
+  courseContainer.className = "courseContainer";
+
+  let input = document.createElement("input");
+  input.type = "text";
+  input.className = "userCourses";
+  courseContainer.appendChild(input);
+
+  let deleteButton = document.createElement("input");
+  deleteButton.type = "button";
+  deleteButton.className = "deleteButton";
+  deleteButton.value = "Delete Course";
+  deleteButton.addEventListener("click", () => {
+    coursesInput.removeChild(courseContainer);
+    count--;
+  });
+  courseContainer.appendChild(document.createTextNode(" "));
+  courseContainer.appendChild(deleteButton);
+
+  coursesInput.appendChild(courseContainer);
+
+  count++;
+}
+
+coursesTaking.addEventListener("click", addCourse);

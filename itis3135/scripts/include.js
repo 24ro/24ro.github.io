@@ -9,7 +9,7 @@
         var o = new XMLHttpRequest();
         (o.onreadystatechange = function () {
           4 === o.readyState &&
-            200 === o.status &&
+            200 == o.status &&
             e.forEach(function (t) {
               var e = t.getAttribute("data-replace"),
                 n = o.responseText;

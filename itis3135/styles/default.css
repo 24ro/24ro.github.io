@@ -159,11 +159,6 @@ input[type="radio"]:checked + label {
     border-color: mediumspringgreen;
 }
 
-.byo-button{
-  text-align: center;
-  background-color: mediumspringgreen;
-  color: blue;
-}
 
 
 /* Rule Overrides For Laptops / Small Screens */
@@ -184,3 +179,8 @@ input[type="radio"]:checked + label {
         background-color:red;
     }
   }
+
+  .calculator__keys { 
+  display: grid; 
+  /* other necessary CSS */ 
+}
