@@ -179,8 +179,3 @@ input[type="radio"]:checked + label {
         background-color:red;
     }
   }
-
-  .calculator__keys { 
-  display: grid; 
-  /* other necessary CSS */ 
-}

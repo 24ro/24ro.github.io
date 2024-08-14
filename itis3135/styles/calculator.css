@@ -2,12 +2,7 @@
   --width: 800px;
 }
 
-.calc-main,
-.maincontainer {
-  width: 90%;
-  max-width: 1200px;
-  margin: 0 auto;
-}
+
 
 .calc-body {
   background-color: rgb(249, 109, 97);
@@ -62,6 +57,11 @@ input {
 
 .footer a {
   color: white;
+}
+
+.calc-no-css{
+    background-color: mediumspringgreen;
+  color: blue;
 }
 
 /* Rule Overrides For Laptops / Small Screens */
