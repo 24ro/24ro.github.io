@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" >
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" >
+    <title>Ro Mussasa's Red Moose || ITIS 3135 || Client Project pt.1</title>
+    <link rel="stylesheet" href="styles/default.css" >
+    <script src="https://farawayforests.com/cdn/accumulus/accumulus.min.js"></script>
+  </head>
+
+  <style>
+      body {
+        font-family: Arial, sans-serif;
+        background-color: #f2f2f2;
+        margin: 0;
+        padding: 0;
+      }
+
+      header {
+        background-color: #2a378e;
+        color: white;
+        text-align: center;
+        padding: 1rem 0;
+      }
+
+      main {
+        text-align: left;
+        padding: 20px;
+      }
+
+      .home-intro {
+        font-size: 1.2rem;
+        color: #2a378e;;
+      }
+
+      footer {
+        background-color: #2a378e;
+        color: white;
+        text-align: center;
+        padding: 1rem 0;
+      }
+
+      .design {
+        color: white;
+        text-decoration: none;
+      }
+
+      .design:hover {
+        text-decoration: underline;
+      }
+
+      img {
+        max-width: 50vw;
+        max-height: 50vh;
+      }
+
+      #validation_link_html,
+      #validation_link_css,
+      #validation_link_disability {
+        display: inline-block;
+        margin: 10px;
+      }
+    </style>
+
+  <body>
+    <header>
+      <div data-include="components/header2.html"></div>
+      
+    </header>
+
+    <main>
+      
+      <p><b><u>Project Overview:</u></b></p>
+      <p>The ComfortCare Clinical Homecare website is designed to promote the professional services of a private clinical homecare business. The website will help the client increase visibility, offer service details, and provide potential patients with a way to connect and request in-home nursing care. Additionally, it will offer a streamlined way for nurses to get in touch about potential job opportunities.</p>
+
+      <p><b><u>Client Info:</u></b></p>
+      <ul>
+        <li><strong>Name:</strong> [Private]</li>
+        <li><strong>Business:</strong> ComfortCare Clinical Homecare</li>
+        <li><strong>Email:</strong> [Private]</li>
+        <li><strong>Phone:</strong> [Private]</li>
+      </ul>
+
+      <p><b><u>Wireframes:</u></b></p>
+      <figure>
+        <img src="../images/cc-wireframe.jpeg" alt="Homepage Wireframe">
+        <figcaption>Homepage Wireframe </a></figcaption>
+      </figure>
+
+      <p><b><u>Site Map:</u></b></p>
+      <figure>
+        <img src="sitemap.png" 
+        alt="Site Map Diagram">
+        <figcaption>Site Map - <a href="https://drive.google.com/file/d/1BmiQH-U3WmnHGztB8IipO4boKFCa5c3G/view?usp=sharing">View on Draw.io</a></figcaption>
+      </figure>
+
+      <p><b><u>Page Design:</u></b></p>
+      <ul>
+        <li><strong>Homepage:</strong> Welcome page with mission and call-to-action buttons. Users: General public. Includes image slider.</li>
+        <li><strong>About Us:</strong> Background and values. Users: patients and partners.</li>
+        <li><strong>Services:</strong> Care options with expandable details using jQuery UI accordion.</li>
+        <li><strong>Careers:</strong> Application form for nurses. Validated form fields.</li>
+        <li><strong>Contact Us:</strong> Contact form. AJAX submission.</li>
+      </ul>
+
+      <p><b><u>Dynamic Functionality:</u></b></p>
+      <ul>
+        <li><strong>Homepage:</strong> JavaScript image slider</li>
+        <li><strong>Services Page:</strong> jQuery UI Accordion for expandable services</li>
+        <li><strong>Careers Page:</strong> Validated job application form</li>
+        <li><strong>Contact Page:</strong> AJAX contact form with confirmation</li>
+        <li><strong>Gallery:</strong> Lightbox photo plugin</li>
+      </ul>
+      <p>Example URLs for interactive inspiration:</p>
+      <ul>
+        <li><a href="https://jqueryui.com/accordion/">jQuery UI Accordion</a></li>
+        <li><a href="https://lokeshdhakar.com/projects/lightbox2/">Lightbox Gallery</a></li>
+        <li><a href="https://www.w3schools.com/howto/howto_css_contact_form.asp">Simple Contact Form</a></li>
+      </ul>
+
+    </main>
+
+    <footer>
+        <div data-include="components/footer.html"></div>
+    </footer>
+    <script src="scripts/include.js"></script>
+    <button type = "button" onclick = 	"document.querySelectorAll('link[rel=stylesheet]').forEach(function(e)	{e.setAttribute('href', '');});">No CSS</button>
+  </body>
+</html>

@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" >
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" >
+    <title>Ro Mussasa's Red Moose || ITIS 3135 || Client Project pt.1</title>
+    <link rel="stylesheet" href="styles/default.css" >
+    <script src="https://farawayforests.com/cdn/accumulus/accumulus.min.js"></script>
+  </head>
+
+  <style>
+      body {
+        font-family: Arial, sans-serif;
+        background-color: #f2f2f2;
+        margin: 0;
+        padding: 0;
+      }
+
+      header {
+        background-color: #2a378e;
+        color: white;
+        text-align: center;
+        padding: 1rem 0;
+      }
+
+      main {
+        text-align: left;
+        padding: 20px;
+      }
+
+      .home-intro {
+        font-size: 1.2rem;
+        color: #2a378e;
+      }
+
+      footer {
+        background-color: #2a378e;
+        color: white;
+        text-align: center;
+        padding: 1rem 0;
+      }
+
+      .design {
+        color: white;
+        text-decoration: none;
+      }
+
+      .design:hover {
+        text-decoration: underline;
+      }
+
+      img {
+        max-width: 50vw;
+        max-height: 50vh;
+      }
+
+      #validation_link_html,
+      #validation_link_css,
+      #validation_link_disability {
+        display: inline-block;
+        margin: 10px;
+      }
+    </style>
+
+  <body>
+    <header>
+      <div data-include="components/header2.html"></div>
+      
+    </header>
+
+    
+    <footer>
+        <div data-include="components/footer.html"></div>
+    </footer>
+    <script src="scripts/include.js"></script>
+    <button type = "button" onclick = 	"document.querySelectorAll('link[rel=stylesheet]').forEach(function(e)	{e.setAttribute('href', '');});">No CSS</button>
+  </body>
+</html>
