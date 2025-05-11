@@ -3,10 +3,7 @@
   <head>
     <meta charset="UTF-8" >
     <meta name="viewport" content="width=device-width, initial-scale=1.0" >
-    <title>Services || ComfortCare Clinical Home Care</title>
-    <link rel="stylesheet" href="https://code.jquery.com/ui/1.13.2/themes/base/jquery-ui.css" />
-    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
-    <script src="https://code.jquery.com/ui/1.13.2/jquery-ui.min.js"></script>
+    <title>Contact Us || ComfortCare Clinical Home Care</title>
     <script src="https://farawayforests.com/cdn/accumulus/accumulus.min.js"></script>
   </head>
 
@@ -96,35 +93,29 @@
     </header>
 
     <main>
-      <h2>Our Services</h2>
-      <p class="home-intro">ComfortCare offers a wide range of personalized clinical services delivered with professionalism and compassion.</p>
+      <h2>Contact Us</h2>
+      <p class="home-intro">We’d love to hear from you. Whether you have a question about care, employment, or partnerships — our team is ready to help.</p>
 
-      <div id="accordion">
-        <h3>Skilled Nursing Care</h3>
-        <div>
-          <p>Our licensed nurses provide in-home clinical care including medication administration, wound care, and chronic disease management.</p>
-        </div>
+      <form action="#" method="post">
+        <label for="name"><strong>Name:</strong></label><br>
+        <input type="text" id="name" name="name" required><br><br>
 
-        <h3>Physical Therapy</h3>
-        <div>
-          <p>Our physical therapists help clients regain strength and mobility after injury, surgery, or hospitalization—all from the comfort of home.</p>
-        </div>
+        <label for="email"><strong>Email:</strong></label><br>
+        <input type="email" id="email" name="email" required><br><br>
 
-        <h3>Occupational Therapy</h3>
-        <div>
-          <p>We assist with daily living activities through personalized therapy programs aimed at increasing independence.</p>
-        </div>
+        <label for="reason"><strong>Reason for Contact:</strong></label><br>
+        <select id="reason" name="reason" required>
+          <option value="">--Select--</option>
+          <option value="Service Inquiry">Service Inquiry</option>
+          <option value="Career Opportunities">Career Opportunities</option>
+          <option value="General Question">General Question</option>
+        </select><br><br>
 
-        <h3>Home Health Aide Services</h3>
-        <div>
-          <p>Our aides provide personal care, light housekeeping, meal prep, and companionship to support everyday comfort and safety.</p>
-        </div>
+        <label for="message"><strong>Your Message:</strong></label><br>
+        <textarea id="message" name="message" rows="6" cols="40" required></textarea><br><br>
 
-        <h3>Respite and Palliative Care</h3>
-        <div>
-          <p>We offer short term relief for family caregivers and compassionate support for those in end of life care.</p>
-        </div>
-      </div>
+        <input type="submit" value="Send Message">
+      </form>
     </main>
 
     <footer>
@@ -132,9 +123,6 @@
     </footer>
 
     <script src="../scripts/include.js"></script>
-    <script src="../scripts/services.js"></script>
-
-
     <button type="button" onclick="document.querySelectorAll('link[rel=stylesheet]').forEach(function(e) { e.setAttribute('href', ''); });">No CSS</button>
   </body>
 </html>

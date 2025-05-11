@@ -3,76 +3,157 @@
   <head>
     <meta charset="UTF-8" >
     <meta name="viewport" content="width=device-width, initial-scale=1.0" >
-    <title>Ro Mussasa's Red Moose || ITIS 3135 || Client Project pt.1</title>
-    <link rel="stylesheet" href="styles/default.css" >
+    <title>Home || ComfortCare Clinical Home Care</title>
+  
     <script src="https://farawayforests.com/cdn/accumulus/accumulus.min.js"></script>
   </head>
 
   <style>
-      body {
-        font-family: Arial, sans-serif;
-        background-color: #f2f2f2;
-        margin: 0;
-        padding: 0;
-      }
+    body {
+      font-family: Arial, sans-serif;
+      background-color: #f2f2f2;
+      text-align: center;
+      padding-left: 5%;
+      padding-right: 5%;
+    }
 
-      header {
-        background-color: #2a378e;
-        color: white;
-        text-align: center;
-        padding: 1rem 0;
-      }
+    header {
+      background-color: #2a378e;
+      color: black;
+      text-align: center;
+      padding: 1rem 0;
+    }
+    .header {
+      background-color: #2a378e;
+      color: white;
+      font-weight: bold;
+      text-decoration: dotted;
+      text-align: center;
+      padding: 1rem 0;
+    }
+    .header:hover {
+      color: black;
+    }
 
-      main {
-        text-align: left;
-        padding: 20px;
-      }
+    main {
+      text-align: left;
+      padding: 20px;
+    }
 
-      .home-intro {
-        font-size: 1.2rem;
-        color: #2a378e;
-      }
+    .home-intro {
+      font-size: 1.2rem;
+      color: #2a378e;
+    }
 
-      footer {
-        background-color: #2a378e;
-        color: white;
-        text-align: center;
-        padding: 1rem 0;
-      }
+    footer {
+      background-color: #2a378e;
+      color: white;
+      text-align: center;
+      padding: 1rem 0;
+    }
+    .footer {
+      color: white;
+      font-weight: bold;
+      text-decoration: dotted;
+      text-align: center;
+      font-size: 14;
+    }
+    .footer:hover {
+      color: black;
+    }
 
-      .design {
-        color: white;
-        text-decoration: none;
-      }
+    .footer a {
+      color: white;
+    }
 
-      .design:hover {
-        text-decoration: underline;
-      }
+    .design {
+      color: white;
+      text-decoration: none;
+    }
 
-      img {
-        max-width: 50vw;
-        max-height: 50vh;
-      }
+    .design:hover {
+      text-decoration: underline;
+    }
 
-      #validation_link_html,
-      #validation_link_css,
-      #validation_link_disability {
-        display: inline-block;
-        margin: 10px;
-      }
-    </style>
+    img {
+      max-width: 50vw;
+      max-height: 50vh;
+    }
+
+    .hero-img {
+  display: block;
+  margin: 0 auto;
+  max-width: 100%;
+  max-height: 500px;
+  object-fit: cover;
+}
+
+
+    .highlight-buttons {
+  display: flex;
+  justify-content: center;
+  gap: 2rem;
+  flex-wrap: wrap;
+  margin: 3rem 0;
+}
+
+.highlight-btn {
+  background-color: #2a378e;
+  color: white;
+  font-weight: bold;
+  padding: 1rem 2rem;
+  text-decoration: none;
+  border: none;
+  border-radius: 8px;
+  font-size: 1rem;
+  text-align: center;
+  min-width: 180px;
+  transition: color 0.3s ease;
+}
+
+.highlight-btn:hover {
+  color: black;
+}
+
+
+
+    #validation_link_html,
+    #validation_link_css,
+    #validation_link_disability {
+      display: inline-block;
+      margin: 10px;
+    }
+  </style>
 
   <body>
     <header>
-      <div data-include="components/header2.html"></div>
-      
+      <div data-include="../components/header2.html"></div>
     </header>
 
-    
+  <main>
+
+    <section class="hero">
+      <img src="../images/cc-home-image.jpg" alt="Compassionate nurse helping patient" class="hero-img">
+    </section>
+
+    <section class="welcome">
+      <h2>Welcome to ComfortCare Clinical Homecare</h2>
+      <p>Our mission is to provide high-quality in-home clinical care tailored to meet the needs of our patients.</p>
+    </section>
+
+    <section class="highlight-buttons">
+  <a href="about.html" class="highlight-btn">Our Values</a>
+  <a href="services.html" class="highlight-btn">Our Services</a>
+  <a href="careers.html" class="highlight-btn">Join Our Team</a>
+</section>
+
+  </main>
+
     <footer>
-        <div data-include="components/footer.html"></div>
+        <div data-include="../components/footer2.html"></div>
     </footer>
-    <script src="scripts/include.js"></script>
+    <script src="../scripts/include.js"></script>
+    <script src="../scripts/homepage.js"></script>
     <button type = "button" onclick = 	"document.querySelectorAll('link[rel=stylesheet]').forEach(function(e)	{e.setAttribute('href', '');});">No CSS</button>
   </body>
 </html>

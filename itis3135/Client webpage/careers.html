@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" >
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" >
+  <title>Careers || ComfortCare Clinical Home Care</title>
+  <script src="https://farawayforests.com/cdn/accumulus/accumulus.min.js"></script>
+</head>
+
+<style>
+      body {
+        font-family: Arial, sans-serif;
+        background-color: #f2f2f2;
+        text-align: center;
+        padding-left: 5%;
+        padding-right: 5%;
+      }
+
+      header {
+        background-color: #2a378e;
+        color: black;
+        text-align: center;
+        padding: 1rem 0;
+      }
+      .header {
+        background-color: #2a378e;
+        color: white;
+        font-weight: bold;
+        text-decoration: dotted;
+        text-align: center;
+        padding: 1rem 0;
+        }
+    .header:hover {
+        color: black;
+        }
+
+      main {
+        text-align: left;
+        padding: 20px;
+      }
+
+      .home-intro {
+        font-size: 1.2rem;
+        color: #2a378e;;
+      }
+
+      footer {
+        background-color: #2a378e;
+        color: white;
+        text-align: center;
+        padding: 1rem 0;
+      }
+      .footer {
+        color: white;
+        font-weight: bold;
+        text-decoration: dotted;
+        text-align: center;
+        font-size: 14;
+    }
+    .footer:hover {
+    color: black;
+    }
+
+    .footer a {
+    color: white;
+    }
+
+      .design {
+        color: white;
+        text-decoration: none;
+      }
+
+      .design:hover {
+        text-decoration: underline;
+      }
+
+      img {
+        max-width: 50vw;
+        max-height: 50vh;
+      }
+
+      #validation_link_html,
+      #validation_link_css,
+      #validation_link_disability {
+        display: inline-block;
+        margin: 10px;
+      }
+    </style>
+
+<body>
+  <header>
+    <div data-include="../components/header2.html"></div>
+  </header>
+
+  <main>
+    <h2>Join Our Team</h2>
+    <p class="home-intro">We're always looking for compassionate, qualified professionals to join our clinical home care team. Apply below!</p>
+
+    <form id="applicationForm" action="#" method="post">
+      <label for="name"><strong>Full Name:</strong></label><br>
+      <input type="text" id="name" name="name" required><br><br>
+
+      <label for="email"><strong>Email:</strong></label><br>
+      <input type="email" id="email" name="email" required><br><br>
+
+      <label for="position"><strong>Position Applied For:</strong></label><br>
+      <select id="position" name="position" required>
+        <option value="">--Select--</option>
+        <option value="RN - Registered Nurse">RN - Registered Nurse</option>
+        <option value="Home Health Aide">Home Health Aide</option>
+        <option value="Physical Therapist">Physical Therapist</option>
+        <option value="Occupational Therapist">Occupational Therapist</option>
+      </select><br><br>
+
+      <label for="experience"><strong>Relevant Experience:</strong></label><br>
+      <textarea id="experience" name="experience" rows="4" cols="40" required></textarea><br><br>
+
+      <input type="submit" value="Submit Application">
+    </form>
+  </main>
+
+  <footer>
+    <div data-include="../components/footer2.html"></div>
+  </footer>
+
+  <script src="../scripts/include.js"></script>
+<script src="../scripts/careers.js"></script>
+
+
+  <button type="button" onclick="document.querySelectorAll('link[rel=stylesheet]').forEach(function(e) { e.setAttribute('href', ''); });">No CSS</button>
+</body>
+</html>

@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>About Us || ComfortCare Clinical Home Care</title>
+    <script src="https://farawayforests.com/cdn/accumulus/accumulus.min.js"></script>
+  </head>
+
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      background-color: #f2f2f2;
+      text-align: center;
+      padding-left: 5%;
+      padding-right: 5%;
+    }
+
+    header {
+      background-color: #2a378e;
+      color: black;
+      text-align: center;
+      padding: 1rem 0;
+    }
+    .header {
+      background-color: #2a378e;
+      color: white;
+      font-weight: bold;
+      text-decoration: dotted;
+      text-align: center;
+      padding: 1rem 0;
+    }
+    .header:hover {
+      color: black;
+    }
+
+    main {
+      text-align: left;
+      padding: 20px;
+    }
+
+    .home-intro {
+      font-size: 1.2rem;
+      color: #2a378e;
+    }
+
+    footer {
+      background-color: #2a378e;
+      color: white;
+      text-align: center;
+      padding: 1rem 0;
+    }
+    .footer {
+      color: white;
+      font-weight: bold;
+      text-decoration: dotted;
+      text-align: center;
+      font-size: 14;
+    }
+    .footer:hover {
+      color: black;
+    }
+
+    .footer a {
+      color: white;
+    }
+
+    .design {
+      color: white;
+      text-decoration: none;
+    }
+
+    .design:hover {
+      text-decoration: underline;
+    }
+
+    img {
+      max-width: 50vw;
+      max-height: 50vh;
+    }
+
+    #validation_link_html,
+    #validation_link_css,
+    #validation_link_disability {
+      display: inline-block;
+      margin: 10px;
+    }
+  </style>
+
+  <body>
+    <header>
+      <div data-include="../components/header2.html"></div>
+    </header>
+
+    <main>
+      <h2>About Us</h2>
+
+      <p class="home-intro">
+        <b><u>Our Mission:</u></b>
+      </p>
+      <p>
+        At ComfortCare, we strive to deliver personalized and professional home
+        care that promotes health, dignity, and independence for every client we
+        serve.
+      </p>
+
+      <p class="home-intro">
+        <b><u>Our Story:</u></b>
+      </p>
+      <p>
+        Founded with the belief that care begins with compassion, ComfortCare
+        has proudly supported families for over a decade. We specialize in
+        high-quality clinical care in the comfort of home.
+      </p>
+
+      <p class="home-intro">
+        <b><u>Core Values:</u></b>
+      </p>
+      <ul>
+        <li>Compassion in every interaction</li>
+        <li>Respect for every individual</li>
+        <li>Professionalism backed by certified expertise</li>
+        <li>Reliable care tailored to each need</li>
+      </ul>
+
+      <p class="home-intro">
+        <b><u>Our Team:</u></b>
+      </p>
+      <p>
+        Our licensed nurses and care professionals bring years of experience and
+        a deep commitment to your family’s well-being.
+      </p>
+
+      <p class="home-intro">
+        <b><u>Testimonial:</u></b>
+      </p>
+      <blockquote>
+        "ComfortCare gave my mother the loving support she needed to stay in her
+        home. We’re forever grateful." – A. Martinez
+      </blockquote>
+    </main>
+
+    <footer>
+      <div data-include="../components/footer2.html"></div>
+    </footer>
+
+    <script src="../scripts/include.js"></script>
+    <button
+      type="button"
+      onclick="document.querySelectorAll('link[rel=stylesheet]').forEach(function(e) { e.setAttribute('href', ''); });"
+    >
+      No CSS
+    </button>
+  </body>
+</html>
