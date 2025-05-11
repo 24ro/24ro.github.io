@@ -4,88 +4,11 @@
   <meta charset="UTF-8" >
   <meta name="viewport" content="width=device-width, initial-scale=1.0" >
   <title>Careers || ComfortCare Clinical Home Care</title>
+  <link rel="stylesheet" href="../styles/careers.css" >
+  <link rel="stylesheet" href="../styles/cc-header.css" >
   <script src="https://farawayforests.com/cdn/accumulus/accumulus.min.js"></script>
 </head>
 
-<style>
-      body {
-        font-family: Arial, sans-serif;
-        background-color: #f2f2f2;
-        text-align: center;
-        padding-left: 5%;
-        padding-right: 5%;
-      }
-
-      header {
-        background-color: #2a378e;
-        color: black;
-        text-align: center;
-        padding: 1rem 0;
-      }
-      .header {
-        background-color: #2a378e;
-        color: white;
-        font-weight: bold;
-        text-decoration: dotted;
-        text-align: center;
-        padding: 1rem 0;
-        }
-    .header:hover {
-        color: black;
-        }
-
-      main {
-        text-align: left;
-        padding: 20px;
-      }
-
-      .home-intro {
-        font-size: 1.2rem;
-        color: #2a378e;;
-      }
-
-      footer {
-        background-color: #2a378e;
-        color: white;
-        text-align: center;
-        padding: 1rem 0;
-      }
-      .footer {
-        color: white;
-        font-weight: bold;
-        text-decoration: dotted;
-        text-align: center;
-        font-size: 14;
-    }
-    .footer:hover {
-    color: black;
-    }
-
-    .footer a {
-    color: white;
-    }
-
-      .design {
-        color: white;
-        text-decoration: none;
-      }
-
-      .design:hover {
-        text-decoration: underline;
-      }
-
-      img {
-        max-width: 50vw;
-        max-height: 50vh;
-      }
-
-      #validation_link_html,
-      #validation_link_css,
-      #validation_link_disability {
-        display: inline-block;
-        margin: 10px;
-      }
-    </style>
 
 <body>
   <header>
@@ -106,11 +29,12 @@
       <label for="position"><strong>Position Applied For:</strong></label><br>
       <select id="position" name="position" required>
         <option value="">--Select--</option>
-        <option value="RN - Registered Nurse">RN - Registered Nurse</option>
-        <option value="Home Health Aide">Home Health Aide</option>
-        <option value="Physical Therapist">Physical Therapist</option>
-        <option value="Occupational Therapist">Occupational Therapist</option>
-      </select><br><br>
+        <option value="rn">RN - Registered Nurse</option>
+        <option value="aide">Home Health Aide</option>
+        <option value="pt">Physical Therapist</option>
+        <option value="ot">Occupational Therapist</option>
+      </select><br>
+      <p id="job-desc"></p><br>
 
       <label for="experience"><strong>Relevant Experience:</strong></label><br>
       <textarea id="experience" name="experience" rows="4" cols="40" required></textarea><br><br>
@@ -124,9 +48,7 @@
   </footer>
 
   <script src="../scripts/include.js"></script>
-<script src="../scripts/careers.js"></script>
+  <script src="../scripts/careers.js"></script>
 
-
-  <button type="button" onclick="document.querySelectorAll('link[rel=stylesheet]').forEach(function(e) { e.setAttribute('href', ''); });">No CSS</button>
 </body>
 </html>

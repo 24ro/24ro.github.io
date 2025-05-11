@@ -1,0 +1,14 @@
+nav {
+  display: flex;
+  justify-content: center;
+  gap: 2rem; /* Controls spacing between links */
+  flex-wrap: wrap;
+  padding: 1rem 0;
+}
+
+nav a.header {
+  text-decoration: none;
+  font-weight: bold;
+  color: white;
+  font-size: 1rem;
+}
